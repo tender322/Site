@@ -19,7 +19,7 @@
 </body>
 <script>
     var WebApp = window.Telegram.WebApp;
-    var unSafeData = WebApp.initDataUnsafe.user;
+    var unSafeData = WebApp.initDataUnsafe;
     console.log(WebApp);
     console.log(unSafeData);
     WebApp.showAlert(`Добро пожаловать, @${unSafeData.username}.`); 

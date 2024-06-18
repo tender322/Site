@@ -18,8 +18,8 @@
     <div class="top_head">Главная</div>
 </body>
 <script>
-    var WebApp = window.Telegram.WebApp;
+    var WebApp = window.Telegram.WebApp.initDataUnsafe;
     console.log(WebApp) 
-    WebApp.showAlert(`Добро пожаловать, @${WebApp.initDataUnsafe.username}.`); 
+    WebApp.showAlert(`Добро пожаловать, @${WebApp.username}.`); 
 </script>
 </html>

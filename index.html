@@ -20,11 +20,6 @@
 <script>
     var WebApp = window.Telegram.WebApp;
     var init = window.Telegram.WebApp.initDataUnsafe;
-    var init2 = window.Telegram.WebApp.initData;
-
-    console.log(WebApp);
-    console.log(init);
-    console.log(init2);
-    WebApp.showAlert(`Добро пожаловать, @${init.username}.`); 
+    WebApp.showAlert(`Добро пожаловать, @${init.user.username}.`); 
 </script>
 </html>

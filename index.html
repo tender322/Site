@@ -18,7 +18,7 @@
     <div class="top_head">Главная</div>
 </body>
 <script>
-    var WebApp = window.Telegram.WebApp; 
-    WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser}.`); 
+    var WebApp = window.Telegram.WebApp.initData; 
+    WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`); 
 </script>
 </html>

@@ -19,9 +19,11 @@
 </body>
 <script>
     var WebApp = window.Telegram.WebApp;
-    var unSafeData = WebApp.initDataUnsafe;
+    var init = Telegram.WebApp.initData;
+    var init2 = window.Telegram.WebApp.initData;
+
     console.log(WebApp);
-    console.log(unSafeData);
-    WebApp.showAlert(`Добро пожаловать, @${unSafeData.username}.`); 
+    console.log(init);
+    WebApp.showAlert(`Добро пожаловать, @${init.username}.`); 
 </script>
 </html>

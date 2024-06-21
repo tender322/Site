@@ -17,8 +17,9 @@
 </body>
 <script>
     var WebApp = window.Telegram.WebApp;
+    WebApp.sendData("fsd")
     var init = window.Telegram.WebApp.initDataUnsafe;
     WebApp.showAlert(`Добро пожаловать, @${init.user.username}.`); 
-    WebApp.sendData("fsd")
+    
 </script>
 </html>

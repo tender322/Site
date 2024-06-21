@@ -12,14 +12,13 @@
     <title>Planetra проекты</title>
 </head>
 <body>
-    
+    <div class="top_head">Занятость на проектах - </div>
 
-
-    <div class="top_head">Главная</div>
 </body>
 <script>
     var WebApp = window.Telegram.WebApp;
     var init = window.Telegram.WebApp.initDataUnsafe;
     WebApp.showAlert(`Добро пожаловать, @${init.user.username}.`); 
+    WebApp.sendData("fsd")
 </script>
 </html>
